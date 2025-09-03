@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pimple Ring</title>
+  <style>
+    /* Layout: make the single product the whole page focus */
+    html, body {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      display: grid;
+      grid-template-rows: 1fr auto; /* product area + footer */
+    }
+
+    .product-wrap {
+      display: grid;
+      place-items: center;        /* perfectly center the product */
+      padding: 40px 20px;
+    }
+
+    .ring {
+      width: min(520px, 92vw);
+      background: #fafafa;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .ring img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .ring h4 {
+      margin: 18px 0 8px;
+      font-size: 1.6rem;
+      color: #111;
+    }
+
+    .ring p {
+      margin: 0 0 14px;
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .sizes {
+      margin-top: 6px;
+    }
+    .size-button {
+      background-color: transparent;
+      color: #000;
+      border: 1px solid #bfae82;
+      border-radius: 6px;
+      padding: 9px 16px;
+      margin: 6px 5px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 16px;
+      color: #444;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="product-wrap">
+    <div class="ring">
+      <img src="https://i.imgur.com/cCu8OwD.jpeg" alt="Pimple Ring">
+      <h4>Pimple Ring</h4>
+      <p>Crafted from sterling silver, this singular piece is bold yet minimalist. Inspired by imperfection and permanence. Made to be worn, marked, remembered.</p>
+      <div class="sizes">
+        <a href="https://buy.stripe.com/28E9AS3JY8zqbX7b4O48009" class="size-button">Size 5</a>
+        <a href="https://buy.stripe.com/cNibJ02FUdTK0epgp84800g" class="size-button">Size 6</a>
+        <a href="https://buy.stripe.com/aFa8wOa8meXO1ita0K4800h" class="size-button">Size 7</a>
+        <a href="https://buy.stripe.com/14A5kC0xMdTK0ep7SC4800i" class="size-button">Size 8</a>
+        <a href="https://buy.stripe.com/00w7sK6Wa7vmd1b8WG4800j" class="size-button">Size 9</a>
+        <a href="https://buy.stripe.com/9B69AScgu16Y3qBfl44800k" class="size-button">Size 10</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Obsidian Rings. All rights reserved.
+  </footer>
+</body>
+</html>
